@@ -19,4 +19,8 @@ res.addEventListener("click", function () {
   if (percent > 60 && percent < 80) grade.value = "B";
   if (percent > 50 && percent < 60) grade.value = "C";
   if (percent <= 50) grade.value = "D";
+  // clear input
+  marks.forEach(function (val, i, arr) {
+    val.value = "";
+  });
 });
