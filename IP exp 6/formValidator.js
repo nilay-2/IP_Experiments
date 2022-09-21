@@ -15,6 +15,7 @@ submit.addEventListener("click", function () {
   if (!phone.value.match(phoneValidator)) err.push(new Error("Phone number is invalid"));
   if (!email.value.match(emailValidator)) err.push(new Error("Email is invalid"));
   if (!pass.value.match(passValidator)) err.push(new Error("Password must contain atleast 1 uppercase, 1 lowercase, 1 special character"));
+
   if (err.length) alert(err.join("\n"));
   else alert("Registration successful");
   err = [];
