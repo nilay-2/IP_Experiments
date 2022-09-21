@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+</head>
+<style>
+    .input {
+        display: block;
+        margin: 10px auto 10px auto;
+        height: 2em;
+        width: 90%;
+    }
+
+    .container {
+        border: 2px solid black;
+        padding: 3px;
+        width: 33%;
+    }
+
+    button {
+        display: block;
+        margin: auto;
+        width: 50%;
+        background-color: rgb(159, 159, 159);
+        height: 2em;
+        cursor: pointer;
+    }
+
+    button:active {
+        background-color: gray;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <input type="text" class="phone input" placeholder="Enter Phone number eg:- +91 9456...">
+        <input type="text" class="email input" placeholder="Email">
+        <input type="text" class="password input" placeholder="Password">
+        <button class="sub">Submit</button>
+    </div>
+</body>
+<script src="formValidator.js"></script>
+
+</html>
